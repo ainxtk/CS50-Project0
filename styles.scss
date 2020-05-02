@@ -1,0 +1,35 @@
+<!-- SCSS Variable -->
+  $base-color: #0048ff;
+  $border-dark: rgba($base-color, 0.88);
+
+  .alert {
+    border: 1px solid $border-dark;
+  }
+
+<!-- SCSS Nesting -->
+  nav {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    li {
+      display: inline-block;
+    }
+    a {
+      display: block;
+      padding: 6px 12px;
+      text-decoration: none;
+    }
+}
+
+<!-- SCSS inherence -->
+.foo {
+  color: black;
+  border: 1px solid black;
+}
+
+.bar {
+  @extend .foo;
+  background-color: red;
+}

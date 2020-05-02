@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <div class="alert alert-info" role="alert">
+Learn about Micky Kumar <a href="AboutMe.html" class="alert-link">Click Here</a>
+</div>
+    <title>Micky Kumar</title>
+    <head>
+      <meta charset="utf-8">
+      <title>Micky Kumar</title>
+      <h1>Micky Kumar </h1>
+      <link rel="stylesheet" href="styles.css">
+      <nav>
+        <a href="index.html" class ="{% if page.url == '/index.html'%}current{% endif %}">home</a>
+        <a href="AboutMe.html" class ="{% if page.url == '/AboutMe.html'%}current{% endif %}">About</a>
+        <a href="educations.html" class ="{% if page.url == '/educations.html'%}current{% endif %}">Educations</a>
+        <a href="Organization.html" class ="{% if page.url == '/Organization.html'%}current{% endif %}">Organization</a>
+        <a href="Contact.html" class ="{% if page.url == '/Contact.html'%}current{% endif %}">Contact</a>
+
+      </nav>
+    </head>
+  <body>
+      <h2>Data Science</h2>
+      <p>Hello, world! Welcome to My Home Page</p>
+
+      <h2>Who is Micky Kumar </h2>
+      <img src="me.jpg" alt="" width="160" height="100">
+      <p>Micky Kumar is a Data Scientist and Developer.
+         Micky has many skills including python, R studio, time management, organize </p>
+         <a class="btn btn-primary" href="AboutMe.html" role="button">Learn More</a>
+
+  </body>
+
+  <footer>
+    <p> Copyright 2020  Micky Kumar</p>
+  </footer>
+</html>

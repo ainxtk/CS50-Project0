@@ -1,0 +1,68 @@
+html {
+  margin: 0;
+  padding: 0;
+
+  font: normal 100%/1.4 georgia,serif;
+}
+
+.intro {
+  background-color: yellow;
+}
+
+  h1{
+    color: #0000FF;
+    text-align: center;
+  }
+
+  p {
+      color: #000000;
+  }
+
+  table {
+    border: 2px solid black;
+    border-collapse: collapse;
+  }
+  th, td{
+    border: 1px solid black;
+    color: #000000;
+  }
+
+  table {
+      width: 100%;
+  }
+  th {
+      height: 40px;
+  }
+  @media screen{
+      body {
+          color: #32cd32;
+          font-family: Arial, sans-serif;
+          font-size: 14px;
+      }
+  }
+
+
+  @media print {
+      body {
+          color: #ff6347;
+          font-family: Times, serif;
+          font-size: 12pt;
+      }
+  }
+<!-- media sceen lin is 1.2 -->
+  @media screen, print {
+      body {
+          line-height: 1.2;
+      }
+
+
+<!-- grid system equal table size -->
+      <div class="container">
+        <div class="row">
+          <div class="col">Column</div>
+          <div class="col">Column</div>
+          <div class="w-100"></div>
+          <div class="col">Column</div>
+          <div class="col">Column</div>
+        </div>
+      </div>
